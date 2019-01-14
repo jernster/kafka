@@ -2,8 +2,8 @@ import argparse
 import requests
 
 parser = argparse.ArgumentParser(description="Create schema in Schema Registry")
-parser.add_argument("--url", help="schema registry URL") # http://localhost:8081/subjects/ 
-parser.add_argument("--name", help="schema name") # schema-test
+parser.add_argument("--url", help="schema registry URL", required=True) # http://localhost:8081/subjects/ 
+parser.add_argument("--name", help="schema name", required=True) # schema-test
 
 args = parser.parse_args()
 
