@@ -2,7 +2,7 @@ import argparse
 import requests
 
 parser = argparse.ArgumentParser(description="Kafka Connector statuses")
-parser.add_argument("--url", help="Kafka Connect URL", required=True) # http://localhost:8083/connectors 
+parser.add_argument("--url", help="Kafka Connect URL (http://localhost:8083/connectors)", required=True) # http://localhost:8083/connectors 
 
 args = parser.parse_args()
 
