@@ -28,4 +28,7 @@ for connector in connectors:
     #print(type(connector_status))
     #print(connector_status)
     for k,v in connector_status.items():
-        print(k,v)
+        #str = "{0}: {1}".format(k,v)
+        #print(str)
+        print(f"{k}: {v}")
+    print('=' * 50)
