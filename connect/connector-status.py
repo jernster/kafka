@@ -12,12 +12,20 @@ r = requests.get(connect_url)
 
 # print(r) # <Response [200]>
 
-print(type(r.json))
+#print(type(r.json))
 connectors = []
 connectors = r.json()
-print(type(connectors))
+#print(type(connectors))
 #print(r.json())
-print(connectors)
+#print(connectors)
 
 for connector in connectors:
-    print(connector)
+    #print(connector)
+    connect_status_url = args.url + '/' + connector + '/status'
+    #print(connect_status_url)
+    r = requests.get(connect_status_url)
+    connector_status = r.json()
+    #print(type(connector_status))
+    #print(connector_status)
+    for k,v in connector_status.items():
+        print(k,v)
