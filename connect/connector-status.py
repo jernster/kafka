@@ -30,5 +30,13 @@ for connector in connectors:
     for k,v in connector_status.items():
         #str = "{0}: {1}".format(k,v)
         #print(str)
+        #if type(v) == dict:
+            #print(k)
+        #    for k,v in v.items():
+        #        print(f"{k}: {v}")
+            #print("{0} is a dict".format(v))
+            #print(v.items())
+
+        ##print(type(v))
         print(f"{k}: {v}")
     print('=' * 50)
