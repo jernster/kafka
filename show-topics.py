@@ -2,7 +2,7 @@ import argparse
 import requests
 
 parser = argparse.ArgumentParser(description="Display topics from REST Proxy")
-parser.add_argument("--url", help="show topics", required=True) # http://localhost:8082/topics/ 
+parser.add_argument("--url", help="Provide URL to REST Proxy", required=True) # http://localhost:8082/topics/ 
 
 args = parser.parse_args()
 
