@@ -22,10 +22,8 @@ print()
 
 print("Topic Configuration:")
 print('=' * 30)
-
 for k,v in output['configs'].items():
     print(k,v)
-
 print()
 
 lc_partitions = [ p['partition'] for p in output['partitions'] ]
@@ -34,7 +32,6 @@ lc_replicas = [ r['replicas'] for r in output['partitions'] ]
 
 print("Partitions:")
 print('=' * 30)
-
 for p in output['partitions']:
   #print(f"Partitions: Partition - {p['partition']} Leader - {p['leader']} Replicas:", end=" ")
   print("Partitions: Partition - {0} Leader - {1} Replicas:".format(p['partition'], p['leader']), end=" ")
