@@ -26,10 +26,6 @@ for k,v in output['configs'].items():
     print(k,v)
 print()
 
-lc_partitions = [ p['partition'] for p in output['partitions'] ]
-lc_leader = [ l['leader'] for l in output['partitions'] ]
-lc_replicas = [ r['replicas'] for r in output['partitions'] ]
-
 print("Partitions:")
 print('=' * 30)
 for p in output['partitions']:
